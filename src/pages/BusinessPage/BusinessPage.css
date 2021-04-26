@@ -27,3 +27,13 @@
 .details-phone {
   color: #777;
 }
+
+.details-biz-rating {
+  font-size: 24px;
+  padding: 20px;
+}
+
+.details-rating-section {
+  text-align: center;
+  margin: 10px;
+}

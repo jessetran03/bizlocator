@@ -20,6 +20,7 @@ export default function SearchBar() {
   function handleSearch(zipCode) {
     const zipCodeRegex = /^\d{5}$/;
     if (!zipCodeRegex.test(zipCode)) {
+      window.alert("Please enter a 5-digit zip code.");
       return;
     }
     setLoading(true);

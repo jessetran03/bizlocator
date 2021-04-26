@@ -1,0 +1,47 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`render App without data 1`] = `
+Array [
+  <nav
+    className="home-nav"
+  >
+    <a
+      href="/"
+      onClick={[Function]}
+    >
+      <h1>
+        BizLocator
+      </h1>
+    </a>
+  </nav>,
+  <main>
+    <section
+      className="home"
+    >
+      <h2
+        className="home-header"
+      >
+        Find a business near you!
+      </h2>
+      <form
+        className="search-bar"
+        id="search"
+        onSubmit={[Function]}
+      >
+        <label
+          htmlFor="zip-code-input"
+        >
+          Zip Code
+        </label>
+        <input
+          id="zip-code-input"
+          name="zip-code"
+          onChange={[Function]}
+          placeholder={77056}
+          type="text"
+        />
+      </form>
+    </section>
+  </main>,
+]
+`;

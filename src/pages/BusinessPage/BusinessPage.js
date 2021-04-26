@@ -46,20 +46,22 @@ export default function BusinessPage(props) {
       <p className='details-yelp'>
         Yelp Rating: {businessDetails.rating} ({businessDetails.review_count} ratings)
       </p>
-      <hr/>
-      {bizRating.length !== 0
-        ? (<p className='details-biz-rating'>
+      <hr />
+      <section className='details-rating-section'>
+        {bizRating.length !== 0
+          ? (<p className='details-biz-rating'>
             BizRating: {parseFloat(bizRating[0].average).toFixed(1)} ({bizRating[0].count} ratings)
           </p>)
-        : (<p className='details-biz-rating'>
+          : (<p className='details-biz-rating'>
             Be the first one to leave a BizRating!
           </p>)
-      }
-      
-      <p className='details-rating'>
-        Leave your rating here:
+        }
+
+        <p className='details-rating'>
+          Leave your rating here:
       </p>
-      <ViewerRating id={businessId} />
+        <ViewerRating id={businessId} />
+      </section>
     </section>
   );
 

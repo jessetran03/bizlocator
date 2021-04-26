@@ -1,5 +1,6 @@
 .viewer-star {
   margin: 3px;
+  font-size: 26px;
   color: #777;
   cursor: pointer;
   transition: color 0.2s;

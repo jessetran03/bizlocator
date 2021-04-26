@@ -31,7 +31,7 @@ const ApiService = {
   },
 
   getRatings(businessId) {
-    return fetch(`http://localhost:8000/api/ratings/${businessId}`, {
+    return fetch(`${config.RATING_ENDPOINT}/${businessId}`, {
       method: 'GET',
     })
       .then(res =>
@@ -46,7 +46,7 @@ const ApiService = {
       business_id: businessId,
       rating: rating,
     }
-    return fetch(`http://localhost:8000/api/ratings`, {
+    return fetch(`${config.RATING_ENDPOINT}`, {
       method: 'POST',
       headers: {
         'content-type': 'application/json'
