@@ -1,0 +1,11 @@
+.viewer-star {
+  margin: 3px;
+  color: #777;
+  cursor: pointer;
+  transition: color 0.2s;
+}
+
+.viewer-star:hover {
+  cursor: pointer;
+  color: black;
+}

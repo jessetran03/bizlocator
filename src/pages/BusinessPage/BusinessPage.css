@@ -1,0 +1,29 @@
+.details-page {
+  margin: 100px auto;
+  width: 800px;
+}
+
+.details-page p {
+  margin: 5px 0;
+}
+
+.details-page img {
+  margin-top: 10px;
+  width: 800px;
+  height: 400px;
+  object-fit: cover;
+}
+
+.details-name {
+  font-weight: 600;
+  font-size: 36px;
+  margin: 8px 0;
+}
+
+.details-categories {
+  margin: 0;
+}
+
+.details-phone {
+  color: #777;
+}

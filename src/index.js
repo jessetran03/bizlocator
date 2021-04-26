@@ -1,9 +1,24 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import { BrowserRouter } from 'react-router-dom'
+import registerIcons from './registerIcons';
+import { BusinessListProvider } from './context/BusinessListContext'
 import './index.css';
 import App from './App';
-import reportWebVitals from './reportWebVitals';
+//import reportWebVitals from './reportWebVitals';
 
+registerIcons();
+
+ReactDOM.render(
+  <BusinessListProvider>
+    <BrowserRouter>
+      <App />
+    </BrowserRouter>
+  </BusinessListProvider>,
+  document.getElementById('root')
+)
+
+/*
 ReactDOM.render(
   <React.StrictMode>
     <App />
@@ -15,3 +30,5 @@ ReactDOM.render(
 // to log results (for example: reportWebVitals(console.log))
 // or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
 reportWebVitals();
+
+*/

@@ -1,0 +1,19 @@
+.nav {
+  display: flex;
+  justify-content: center;
+  box-shadow: 0 3px 3px #c7c7c7;
+  background-color: white;
+  justify-content: space-between;
+  position: fixed;
+  overflow: hidden;
+  top: 0;
+  width: 100%;
+}
+
+.nav .search-bar {
+  margin: 16px;
+}
+
+.nav a {
+  margin: 8px 24px;
+}

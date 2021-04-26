@@ -1,0 +1,37 @@
+.home-images-section h3 {
+  text-align: center;
+}
+
+.home-images-display {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 800px;
+  margin: auto;
+}
+
+.home-images {
+  margin: 20px;
+  text-align: center;
+  border: 1px #ccc solid;
+  border-radius: 15px;
+  max-width: 220px;
+  transition: box-shadow 200ms;
+}
+
+.home-images:hover {
+  cursor: pointer;
+  box-shadow: 0px 0px 20px 0px #c7c7c7;
+}
+
+.home-images img {
+  width: 220px;
+  height: 150px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  object-fit: cover;
+}
+
+.home-images p {
+  font-weight: 600;
+}
